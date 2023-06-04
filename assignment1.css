@@ -1,0 +1,643 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+   
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    height: 100px;
+    padding: 0 20px;
+    /* position: fixed; */
+    width: 100%;
+    
+   
+  }
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul li {
+    display: inline-block;
+    margin: 100px;
+  }
+  .navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .navbar-logo {
+    text-align: center;
+  }
+  .navbar-logo img {
+    position: relative;
+    top: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   border: 15px solid rgb(247, 218, 203);
+  }
+  .home-section {
+  
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 750px;
+    color: #333;
+    justify-content: center;
+    align-items: flex-start;
+    border: 20px solid rgb(255, 255, 255);
+  }
+  .home-section::before{
+    content: "";
+    position: absolute;
+    background: url('dutch-sandwich-with-herring-pickled-cucumbers-herbs-red-onions-flesh-color-background-close-up-selective-focus-copy-space-danish-smorrebrod.jpg') no-repeat center center/cover;
+    height:850px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 40px;
+    z-index: -1;
+    /* opacity: 0.9; */
+
+  }
+  .home-content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .home-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 50px;
+  }
+  .home-content{
+    position: absolute;
+    /* border: 2px solid  black; */
+    left: 110px;
+    
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    
+  }
+  .order-btn{
+    width: 110px;
+  }
+  .buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: rgb(247, 218, 203); */
+    background-color: white;
+    
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons a:hover {
+    background-color: rgb(247, 218, 203);
+    color: white;
+  }
+  #menu-section {
+     background-color:#f7f7f7 ;
+    padding: 20px;
+    border: 2px solid brown;
+  border: 20px solid white;
+  color: #333;
+  }
+  #menu-section p{
+    margin-top: 10px;
+    background-color:rgba(255, 255, 255, 0.473);
+    
+  }
+  .menu-category {
+    margin-bottom: 40px;
+  }
+  
+  .menu-category h2 {
+    text-align: center;
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+  }
+  
+.menu-wrapper{
+  width: 100%;
+}
+
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    border: 2px solid white;
+    padding:10px;
+    border-radius: 20px;
+    background-color:#ffffff;
+    width: 300px;
+    height:360px;
+    overflow: hidden;
+    box-shadow: 2px 3px 36px 4px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 2px 3px 36px 4px rgba(0,0,0,0.26);
+    -moz-box-shadow: 2px 3px 36px 4px rgba(0,0,0,0.26);
+    
+   
+  }
+  
+  .menu-item-img {
+    width: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+  
+  .burger1 {
+    background-image: url('beefburgerwithfries.avif');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+   
+  }
+  
+  .burger2 {
+    background-image: url('zingerwithfries.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .burger3 {
+    background-image: url('fishburger.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .burger4 {
+    background-image: url('doublepattyburgerwithfries.avif');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .burger5 {
+    background-image: url('grilledburgerwithfries.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  .burger6 {
+    background-image: url('double\ zinger.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .fries1 {
+    background-image: url('simple\ fries.webp');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .fries2 {
+    background-image: url('mayo\ fries.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .fries3 {
+    background-image: url('loaded\ fries.avif');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .fries4 {
+    background-image: url('pizza\ fries.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink1 {
+    background-image: url('pepsi.webp');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink2 {
+    background-image: url('7up.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink3 {
+    background-image: url('fanta.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink4 {
+    background-image: url('sting.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink5 {
+    background-image: url('dew\ can.webp');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink6 {
+    background-image: url('sprite.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .drink7 {
+    background-image: url('coke.jpg');
+    width: 100%;
+    border-radius: 10px;
+    height: 50%;
+  }
+  
+  .order-button {
+    background-color:white;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    background-color:rgb(247, 218, 203) ;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+  }
+
+  .menu-data-container > h1 {
+    font-size: 25px;
+
+  }
+
+  .menu-data-container > p {
+    font-size:  25px;
+  }
+  
+
+  .menu-data-container > a {
+    font-size: 24px;
+  }
+  .menu-data-container{
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4px 5px 3px 5px;
+    text-align: center;
+  }
+
+
+
+  /* .order-button:hover {
+    background-color:rgb(245, 209, 188);
+    color: white;
+  } */
+  #about {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    
+    border: 20px solid white;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 40px;
+    color: #333;
+  }
+  
+  .history {
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  .history p{
+    margin: 30px;
+    line-height: 50px;
+    
+  }
+  .history h3 {
+    font-size: 35px;
+    color: #333;
+  }
+  
+  .history p {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .social-icons {
+    margin-top: 35px;
+  }
+  
+  .social-icons h3 {
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .social-icons ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .social-icon:hover {
+    background-color:rgb(44, 42, 40);
+  }
+  #contact {
+    background-color: #f7f7f7;
+   
+    padding: 60px 0;
+    text-align: center;
+    border: 20px solid white;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  
+ 
+  
+  .reservation-form {
+    text-align: left;
+  }
+  
+  .reservation-form h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form textarea {
+    height: 120px;
+  }
+  
+  form button {
+    /* background-color:rgb(247, 218, 203) ; */
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    /* background-color: rgb(68, 57, 57); */
+  }
+  
+  .reviews {
+    /* border: 2px solid black; */
+    margin-top: 60px;
+    text-align: left;
+  }
+  #review{
+    /* border: 20px solid rgb(248, 142, 142); */
+    border: 20px solid white;
+    padding: 20px;
+    background-color: #f7f7f7;
+    
+  }
+  #review h3{
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .review {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  
+  .customer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .customer-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .customer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .rating {
+    color: #b8a9a9c2;
+    margin-bottom: 10px;
+  }
+  
+  .fa-star {
+    font-size: 20px;
+  }
+  
+  .checked {
+    color:rgb(236, 188, 30);
+  }
+  
+  .review p {
+
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .customer-name{
+    font-size: 23px;
+  }
+  .review:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  fa-star-half{
+    color: white;
+  }
+  footer {
+  
+    background-color: white;
+    color:black;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .copy-right,
+  .privacy-policy,
+  .terms-of-service {
+    margin-right: 20px;
+  }
+  
+  .copy-right a,
+  .privacy-policy a,
+  .terms-of-service a {
+    color: #1f1b1b;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  
+  .copy-right a:hover,
+  .privacy-policy a:hover,
+  .terms-of-service a:hover {
+    text-decoration: underline;
+  }
+  .add-review {
+    margin-top: 90px;
+    text-align: center;
+  }
+  
+  .add-review h4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  input[type="text"],
+  textarea,
+  select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color:rgb(247, 218, 203);
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(247, 218, 203);
+  }
+  
